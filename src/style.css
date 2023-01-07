@@ -1,0 +1,503 @@
+@font-face {
+  font-family: "Mulish";
+  src: url(./Mulish-Regular.ttf) format("truetype");
+  font-weight: 400;
+}
+
+body {
+  font-family: "Mulish";
+  margin: 0;
+  background-color: rgb(237, 236, 232);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(102, 102, 110, 0.2);
+  box-shadow: 0 2px 10px rgb(102 102 110 / 0.2);
+  background-color: rgb(237, 236, 232);
+  z-index: 1;
+}
+
+.navbar-mobile {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.top-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-btn,
+.navbar-btn-name {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: rgb(60, 60, 65);
+  font-weight: 500;
+  background-color: rgb(237, 236, 232);
+}
+
+.icon {
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.icon-img {
+  height: 28px;
+  width: 28px;
+}
+
+.navbar-btn-name {
+  font-size: 22px;
+}
+
+.navbar-btn {
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.5s ease-in-out;
+}
+
+.navbar-btn:hover {
+  border-bottom-color: rgba(102, 102, 110, 0.4);
+}
+
+.contact-btn {
+  border: none;
+  border-bottom: 1px solid transparent;
+}
+
+.mobile-navbar-links {
+  box-shadow: 0 -3px 2px -2px rgb(102 102 110 / 0.2);
+  width: 100%;
+  margin: 0;
+  padding-top: 20px;
+  list-style-type: none;
+  gap: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.mobile-navbar-links li button {
+  color: rgb(60, 60, 65);
+}
+
+main {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.welcome-pg {
+  min-height: calc(100vh - 2px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  text-align: center;
+  width: calc(100% - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  box-shadow: 0 3px 2px -2px rgb(102 102 110 / 0.2);
+}
+
+h1 {
+  color: rgb(102, 102, 110);
+  margin: 0;
+}
+
+.welcome-name {
+  color: rgb(243, 146, 55);
+}
+
+.dropdown-text-animation {
+  animation: 1.2s drop-text 1 0.8s forwards;
+  opacity: 0;
+}
+
+@keyframes drop-text {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.about-me-pg {
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-container,
+.portfolio-container {
+  box-shadow: 0 3px 2px -2px rgb(102 102 110 / 0.2);
+}
+
+.contact-container,
+.about-me-container,
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  position: relative;
+  width: calc(100% - 80px);
+}
+
+.contact-container {
+  padding-bottom: 40px;
+}
+
+.anchor {
+  position: absolute;
+  top: -56px;
+  left: 0px;
+}
+
+.inner-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.portfolio-pg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  margin: 0;
+}
+
+.about-me-pg p,
+.top-info p {
+  margin-top: 15px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.bottom-info p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.buttons {
+  float: right;
+  display: flex;
+  gap: 8px;
+}
+
+.project-btn,
+.submit-btn {
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(237, 236, 232);
+  color: rgb(60, 60, 65);
+  font-weight: 600;
+}
+
+.project-btn:hover,
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(210, 210, 210);
+}
+
+.about-text,
+.skills-text,
+.project {
+  margin: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(60, 60, 65);
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 8px 0 rgb(210, 210, 210);
+}
+
+.project-img {
+  padding: 20px;
+}
+
+.project-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 20px 10px;
+}
+
+.contact-pg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.map-container {
+  height: auto;
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.map {
+  width: 350px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  width: 85%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(60, 60, 65);
+  width: 100%;
+  padding: 15px 40px 15px 40px;
+  font-size: 16px;
+}
+
+.input-and-label {
+  margin: 6px;
+}
+
+.submit-btn {
+  width: 80px;
+  height: 35px;
+  float: right;
+  margin-left: auto;
+  margin-right: 6px;
+  margin-bottom: 12px;
+}
+
+.top-input {
+  margin-top: 12px;
+}
+
+.linkedin,
+.footer-btn {
+  height: 32px;
+  width: 32px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 15px;
+  box-shadow: 0 -2px 10px rgb(102 102 110 / 0.2);
+}
+
+.footer-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.footer-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 5px;
+}
+
+textarea {
+  font-family: "Mulish";
+  height: 200px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  padding-bottom: 2px;
+}
+
+h2 {
+  color: rgb(243, 146, 55);
+}
+
+#icon {
+  display: none;
+}
+
+@media (min-width: 1130px) {
+  .about-me-pg,
+  .welcome-pg,
+  .portfolio-pg,
+  .contact-pg {
+    width: 1130px;
+  }
+}
+
+@media (max-width: 900px) {
+  .map-container {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .inner-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text,
+  .skills-text,
+  .project {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .contact-container {
+    width: calc(100% - 100px);
+  }
+
+  .form {
+    padding: 10px 20px 10px 20px;
+  }
+
+  .submit-btn {
+    margin-bottom: 0;
+  }
+
+  .top-input {
+    margin-top: 0;
+  }
+
+  .project-text {
+    padding-bottom: 0;
+  }
+
+  .project-img {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  #icon {
+    display: block;
+  }
+
+  .welcome-container {
+    font-size: 14px;
+  }
+
+  .inner-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-text,
+  .skills-text,
+  .project {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-pg,
+  .form-container {
+    width: 100%;
+  }
+
+  .form {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .submit-btn {
+    margin-bottom: 0;
+  }
+
+  .top-input {
+    margin-top: 0;
+  }
+
+  .project-text {
+    padding-bottom: 0;
+  }
+
+  .project-img {
+    padding: 10px;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .contact-container,
+  .about-me-container,
+  .portfolio-container,
+  .welcome-container {
+    width: calc(100% - 20px);
+  }
+}
