@@ -41,9 +41,8 @@ contactForm.addEventListener("submit", (e) => {
 const mobileNavBtn = document.querySelector("#icon");
 
 mobileNavBtn.addEventListener("click", () => {
-  const mobileNavbar = document.querySelector(".mobile-navbar-links");
+  const mobileNavbar = document.querySelector("#mobile-navbar-links");
   const navbar = document.querySelector(".navbar");
-  const navbarBtn = document.querySelector("#icon");
   if (mobileNavbar.style.display === "none") {
     mobileNavbar.style.display = "flex";
     navbar.classList.add("navbar-mobile");
