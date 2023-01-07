@@ -435,6 +435,10 @@ h2 {
   .project-img {
     padding: 10px;
   }
+
+  .mobile-navbar-links {
+    display: none;
+  }
 }
 
 @media (max-width: 550px) {
