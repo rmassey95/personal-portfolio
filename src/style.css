@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Mulish";
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
   margin: 0;
   background-color: rgb(237, 236, 232);
 }
@@ -360,7 +360,7 @@ textarea {
 }
 
 textarea {
-  font-family: "Mulish";
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
   height: 200px;
   font-size: 14px;
 }
