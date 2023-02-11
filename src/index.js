@@ -1,8 +1,5 @@
 import "./style.css";
 import Email from "./Email";
-import navbarHamburg from "./icons8-hamburger-menu-24.png";
-import compPic from "./clement-helardot-95YRwf6CNw8-unsplash.jpg";
-import redditClonePic from "./reddit-clone-pic.png";
 
 const linkedinBtn = document.querySelector("#linkedin-btn");
 linkedinBtn.onclick = () => {

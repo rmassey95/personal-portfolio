@@ -238,6 +238,11 @@ h3 {
   background-color: rgb(210, 210, 210);
 }
 
+.disabled-btn:hover {
+  cursor: not-allowed;
+  background-color: rgb(252, 187, 187);
+}
+
 .about-text,
 .skills-text,
 .project {
@@ -376,6 +381,11 @@ h2 {
 
 #icon {
   display: none;
+}
+
+.btn-update {
+  text-align: right;
+  font-size: smaller;
 }
 
 @media (min-width: 1130px) {
