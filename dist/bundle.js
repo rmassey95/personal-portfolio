@@ -136,7 +136,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Email__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Email */ \"./src/Email.js\");\n\n\n\nconst linkedinBtn = document.querySelector(\"#linkedin-btn\");\nlinkedinBtn.onclick = () => {\n  location.href = \"https://www.linkedin.com/in/ryanmassey2573/\";\n};\n\nconst githubBtn = document.querySelector(\"#github-btn\");\ngithubBtn.onclick = () => {\n  location.href = \"https://github.com/rmassey95?tab=repositories\";\n};\n\nconst contactForm = document.querySelector(\"#contact-form\");\n\nfunction sendEmail(data) {\n  _Email__WEBPACK_IMPORTED_MODULE_1__[\"default\"].send({\n    SecureToken: \"221d3df8-b6f4-4eb8-a1c2-958cda44cd45\",\n    To: \"rmassey.95@gmail.com\",\n    From: \"rmassey.95@gmail.com\",\n    Subject: `${data.subject}`,\n    Body: `NAME: ${data.name}, EMAIL: ${data.email} \n    MESSAGE: ${data.msg}`,\n  }).then((message) => alert(message));\n}\n\ncontactForm.addEventListener(\"submit\", (e) => {\n  e.preventDefault();\n  const data = {};\n  data.name = e.target[0].value;\n  data.email = e.target[1].value;\n  data.subject = e.target[2].value;\n  data.msg = e.target[3].value;\n\n  sendEmail(data);\n});\n\nconst mobileNavBtn = document.querySelector(\"#icon\");\n\nmobileNavBtn.addEventListener(\"click\", () => {\n  const mobileNavbar = document.querySelector(\"#mobile-navbar-links\");\n  const navbar = document.querySelector(\".navbar\");\n  if (mobileNavbar.style.display === \"none\") {\n    mobileNavbar.style.display = \"flex\";\n    navbar.classList.add(\"navbar-mobile\");\n  } else {\n    mobileNavbar.style.display = \"none\";\n    navbar.classList.remove(\"navbar-mobile\");\n  }\n});\n\n\n//# sourceURL=webpack://personal-portfolio/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _Email__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Email */ \"./src/Email.js\");\n/* harmony import */ var _odinbook_pic_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./odinbook-pic.png */ \"./src/odinbook-pic.png\");\n\n\n\n\nconst linkedinBtn = document.querySelector(\"#linkedin-btn\");\nlinkedinBtn.onclick = () => {\n  location.href = \"https://www.linkedin.com/in/ryanmassey2573/\";\n};\n\nconst githubBtn = document.querySelector(\"#github-btn\");\ngithubBtn.onclick = () => {\n  location.href = \"https://github.com/rmassey95?tab=repositories\";\n};\n\nconst contactForm = document.querySelector(\"#contact-form\");\n\nfunction sendEmail(data) {\n  _Email__WEBPACK_IMPORTED_MODULE_1__[\"default\"].send({\n    SecureToken: \"221d3df8-b6f4-4eb8-a1c2-958cda44cd45\",\n    To: \"rmassey.95@gmail.com\",\n    From: \"rmassey.95@gmail.com\",\n    Subject: `${data.subject}`,\n    Body: `NAME: ${data.name}, EMAIL: ${data.email} \n    MESSAGE: ${data.msg}`,\n  }).then((message) => alert(message));\n}\n\ncontactForm.addEventListener(\"submit\", (e) => {\n  e.preventDefault();\n  const data = {};\n  data.name = e.target[0].value;\n  data.email = e.target[1].value;\n  data.subject = e.target[2].value;\n  data.msg = e.target[3].value;\n\n  sendEmail(data);\n});\n\nconst mobileNavBtn = document.querySelector(\"#icon\");\n\nmobileNavBtn.addEventListener(\"click\", () => {\n  const mobileNavbar = document.querySelector(\"#mobile-navbar-links\");\n  const navbar = document.querySelector(\".navbar\");\n  if (mobileNavbar.style.display === \"none\") {\n    mobileNavbar.style.display = \"flex\";\n    navbar.classList.add(\"navbar-mobile\");\n  } else {\n    mobileNavbar.style.display = \"none\";\n    navbar.classList.remove(\"navbar-mobile\");\n  }\n});\n\n\n//# sourceURL=webpack://personal-portfolio/./src/index.js?");
 
 /***/ }),
 
@@ -147,6 +147,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"e497fc540939821b16a0.ttf\";\n\n//# sourceURL=webpack://personal-portfolio/./src/Mulish-Regular.ttf?");
+
+/***/ }),
+
+/***/ "./src/odinbook-pic.png":
+/*!******************************!*\
+  !*** ./src/odinbook-pic.png ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"4ef92848f791a6688e87.png\";\n\n//# sourceURL=webpack://personal-portfolio/./src/odinbook-pic.png?");
 
 /***/ })
 

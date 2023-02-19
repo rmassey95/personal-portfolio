@@ -1,5 +1,6 @@
 import "./style.css";
 import Email from "./Email";
+import Test from "./odinbook-pic.png";
 
 const linkedinBtn = document.querySelector("#linkedin-btn");
 linkedinBtn.onclick = () => {
